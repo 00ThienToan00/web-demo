@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<body>
+    <input type="checkbox" id="nav-toggle"   >
+    <div class="side">
+        <div class="side-brand">
+            <h2><span class="lab la-accusoft"></span>  
+                <span>Admin</span></h2>
+        </div>
+        <div class="side-menu"> 
+            <ul>
+                <li>
+                    <a href="admin.html" class="active"><span class="las la-igloo"></span>
+                        <span> Bảng thống kê</span></a>
+                </li>
+                <li>
+                    <a href="admin2.html"><span class="las la-users"></span>
+                        <span> Quản lí</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="las la-clipboard-list"></span>
+                        <span> Điều khiển</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            
+            <a href="trangchu.html">
+                <h2>
+                    <label for="nav-toggle">
+                        <span class="las la-bars"></span>
+                    </label>
+                    Trang chủ
+                </h2>
+            </a>
+
+                <div class="timkiem-wrapper">
+                    <span class="las la-search"></span>
+                    <input type="search" placeholder="Tìm kiếm"/>
+                </div>
+
+                <div class="user-wrapper">
+                    <i class="fa-solid fa-lock"></i>
+                    <div>
+                        <h4>Admin</h4>
+                        <small>Admin chính</small>
+                        
+                    </div>
+                    
+                </div>
+            
+        </header>
+
+        <main>
+
+            <div class="cards">
+                <div class="card-1">
+                    <div>
+                        <h1>60</h1>
+                        <span class=> Khách hàng</span>
+                    </div>
+                </div>
+                <div >
+                    <span class="las la-users"></span>
+                </div>
+
+                <div class="card-1">
+                    <div>
+                        <h1>100</h1>
+                        <span class=>Sản phẩm</span>
+                    </div>
+                </div>
+                <div>
+                    <span class="las la-clipboard-list"></span>
+                </div>
+
+                <div class="card-1">
+                    <div>
+                        <h1>40</h1>
+                        <span class=>Đặt hàng </span>
+                    </div>
+                </div>
+                <div>
+                    <span class="las la-shopping-bag"></span>
+                </div>
+
+                <div class="card-1">
+                    <div>
+                        <h1>1.000.000</h1>
+                        <span class=>Thu nhập</span>
+                    </div>
+                </div>
+                <div>
+                    <span class="las la-users"></span>
+                </div>
+                
+                
+            </div>
+        </main>
+    </div>
+</body>
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.side{
+width: 350px;
+position: fixed;
+top: 0;
+left: 0;
+height: 100%;
+background:#5c5b5b ;
+z-index: 100;
+transition: width 300ms;
+}
+
+.side-brand{
+    height: 90px;
+    padding: 1rem 0rem 1rem 2rem;
+    color: rgb(231, 6, 6);
+}
+
+/* menu */
+.side-menu{
+    margin-top: 1rem;
+}
+.side-menu li{
+    width: 100%;
+    margin-bottom: 2rem;
+    padding-left:1rem;
+}
+/* chinh the a */
+.side-menu a{
+    display: block;
+    color: #fff;
+    font-size: 1.2rem;
+    padding-left: 1rem;
+}
+
+.side-menu a.active{
+    background: rgb(243, 8, 8);
+    padding-top: 1rem ;
+    padding-bottom: 1rem;
+    color: #f5f1f3 ;
+    border-radius: 30px 0px 0px 30px ;
+}
+
+.side-menu a span:first-child
+{
+    font-size: 1.5rem;
+    padding-right:1rem;
+}
+/* noi dung */
+.main-content{
+    transition: margin-left 300ms;
+    margin-left: 350px;
+}
+
+header{
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    box-shadow: 4px 4px 10px rgb(0, 0, 0, 0.3);
+    position: fixed;
+    left: 345px;
+    width: calc(100% - 345px);
+    top: 0;
+    transition: left 300ms;
+}
+header h2{
+    color: rgb(243, 71, 71);
+}
+header label span {
+    font-size: 1.5rem;
+    padding-left: 1.2rem;
+}
+
+.user-wrapper{
+    display: flex;
+    align-items: center;
+}
+main{
+    margin-top: 85px;
+    padding: 2rem 1.5rem;
+    background: #f0f0f0;
+    min-height: calc(100vh - 90px);
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    grid-gap: 2rem;
+    margin-top: 2rem;
+}
+.card-1{
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 2px;
+}
+
+.card-1 div:last-child span{
+    font-size: 3rem;
+    color:#505050;
+}
+</style>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/dd734c6106.js" crossorigin="anonymous"></script>
+	<link rel="stylejs" href="java.js">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+</head>
+
+<style>
+#list-water {
+	display: none;
+}
+.water {
+	cursor: pointer;
+}
+</style>
+
+<body>
+    <header><!--Chèn logo-->
+        <div class="logo">
+            <img src="images/logo.jpg">
+        </div>
+        <div class="menu">
+			<li><a href ="http://127.0.0.1:5500/trangchu.html">Trang chủ</a></li>
+			<li><a href ="http://127.0.0.1:5500/sanpham.html">Sản phẩm</a></li>  
+			<li><a href ="http://127.0.0.1:5500/gioithieu.html">Giới thiệu</a></li>   
+			<li><a href ="http://127.0.0.1:5500/tintuc.html">Tin Tức</a></li>     
+        </div>
+        <div class="khac"><!--Chèn icon-->
+            <li><input placeholder = "Tìm kiếm" type="text"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></li>
+            <li><i class="fa-sharp fa-solid fa-bag-shopping"></i></li>
+			<li><i class="fa-solid fa-user"></i></li>
+        </div>
+    </header>
+    <!------- Sản phẩm------->
+    <section class="sanpham"> <!--Cột bên trái-->
+        <div class="container">        
+				<div class="sanpham-left">
+					<ul>
+						<li class="sanpham-left-li.block water" >
+							<h2 onclick="handleShowListWater()"><u>NƯỚC</u></h2></li><!--Mục lớn-->
+							<ul id="list-water">
+								<li><h3><a href="./SuaTuoi.html">Sữa Tươi</a></h3></li><!--Các mục con-->
+								<li><h3><a href="./Tra.html">Trà</a></h3></li>
+								<li><h3><a href="./Soda.html">Soda</a></h3></li>
+							</ul>
+						<li class="sanpham-left-li"><h2><a href="./banh.html">BÁNH</a></h2></li>
+					</ul>
+				</div>    
+				<div class="wrap-element-right">
+					<div class="sanpham-right-top-item"><!--trang bên phải-->
+						<h1>NƯỚC<h1><!--Tên trang đầu tiên-->
+					</div>
+					<div class="sanpham-right-content">
+						<div class="sanpham-right-content-item row"><!--thêm sản phảm-->
+							<img src="images/sanpham1.jpg">
+							<h1><a href="./muahang.html"> MINT LATTE <br>
+								(cacao sữa bạc hà)</h1>
+							<p>39.000<sup>đ</sup></p></a>
+						</div>
+						<div class="sanpham-right-content-item"><!--thêm sản phẩm-->
+							<img src="images/sanpham2.jpg">
+							<h1><a href=""> PEACH LATTE <br>
+								(sữa tươi đào) </h1>
+							<p>39.000<sup>đ</sup></p></a>
+						</div>
+						<div class="sanpham-right-content-item"><!--thêm sản phẩm-->
+							<img src="images/sanpham3.jpg">
+							<h1><a href=""> BLUE OCEAN LATTE <br> 
+								(sữa tươi hoa đậu biết) </h1>
+							<p>39.000<sup>đ</sup></p></a>
+						</div>
+						<div class="sanpham-right-content-item"><!--thêm sản phẩm-->
+							<img src="images/sanpham4.jpg">
+							<h1><a href=""> CREAMY LATTE <br> 
+								(sữa tươi cafe) </h1>
+							<p>39.000<sup>đ</sup></p></a>
+						</div>
+						<div class="sanpham-right-content-item"><!--thêm sản phẩm-->
+							<img src="images/sanpham5.jpg">
+							<h1><a href=""> SUMMER PEACH CHEE   <br> 
+								(trà đào vải) </h1>
+							<p>39.000<sup>đ</sup></p></a>
+						</div>
+						<div class="sanpham-right-content-item"><!--thêm sản phẩm-->
+							<img src="images/sanpham6.jpg">
+							<h1><a href=""> LOVE APPLE   <br> 
+								(trà táo xí muội) </h1>
+							<p>39.000<sup>đ</sup></p></a>
+						</div>
+						<div class="sanpham-right-content-item"><!--thêm sản phẩm-->
+							<img src="images/sanpham7.jpg">
+							<h1><a href=""> PASSION SODA  <br> 
+								(soda chanh dây) </h1>
+							<p>39.000<sup>đ</sup></p></a>
+						</div>
+						<div class="sanpham-right-content-item"><!--thêm sản phẩm-->
+							<img src="images/sanpham8.jpg">
+							<h1><a href=""> ROSE SODA   <br> 
+								(soda vải hoa hồng) </h1>
+							<p>39.000<sup>đ</sup></p></a>
+						</div>
+					</div>
+					<div class="sanpham-right-bottom"><!--thêm dòng hiển thị trang -->
+						<div class="sanpham-right-bottom-item">
+							<p>Trang 1 <span>|</span> 8 sản phẩm</p>
+						</div>
+					</div>
+				</div>
+        </div>
+    </section>
+</body>
+</html>
+<script src="java.js"></script>

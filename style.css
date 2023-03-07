@@ -1,0 +1,375 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+
+}
+.logo img {/*-------chỉnh logo ảnh-------*/
+    height: 100px;
+
+}
+li{
+    list-style: none;
+}
+a{
+    text-emphasis: none;
+    color: black;
+}
+header{/*-------điều chỉnh header(trang chủ, sản phẩm...)-------*/
+    display: flex;
+    justify-content: space-between;
+    padding: 12 50px;
+    height: 70px;
+    align-items: center;
+}
+.logo{
+    flex: 1;
+}
+.menu{
+    flex: 1;
+    display: flex;
+}
+.menu > li{
+    padding: 0 12px;
+    position: relative;
+}
+.menu > li:hover .sub-menu{
+    visibility: visible;
+    top: 30px;
+}
+.sub-menu {
+    position: absolute;
+    width: 150px;
+    border: 1px solid #ccc;
+    padding: 10px 0 10px 20px; 
+    visibility: hidden;
+    top: 50px;
+    transition: 0.5s;
+}
+.sub-menu ul{
+    padding-left: 20px;
+}
+.sub-menu li a{
+    font-weight: normal;
+    font-size: 12px;
+}
+.menu > li > a{
+    font-size: 20px;
+    font-weight: bold!important;
+    display: block;
+    line-height: 15px;
+}
+.khac{
+    flex: 1;
+    display: flex;
+}
+.khac > li{
+    padding: 0 12px;
+}
+.khac > li :first-child {
+    position: relative;
+}
+.khac > li:first-child input{
+    width: 100%;
+    border:none;
+    border-bottom: 1px solid #333;
+}
+
+.khac > li:first-child i{
+    position: absolute;
+    right: 330px;
+}
+#Slider{
+    padding-bottom: 30px;
+    border-bottom: 2px solid #000;
+    overflow: hidden;
+}
+/*-------Cố định ảnh nền-------*/
+.aspect-ratio-169 {
+  display: block;
+  position: relative;
+  padding-top: 56.25%;
+  transition: 0.3s;
+  
+}
+
+.aspect-ratio-169 img {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+/*------dot--------*/
+.dot-container{
+    position: absolute;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.dot{
+    height: 16px;
+    width: 16px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.dot.active{ /*-------liên kết nút vs ảnh-------*/
+    background-color: #868686;
+}
+
+/*-------Chỉnh sửa ảnh trong trang sản phẩm--------*/
+.container{
+    display: flex;
+}
+.sanpham-left{
+    width: 20%;
+}
+.sanpham-right{
+    width: 80%;
+}
+.sanpham-right-top-item p{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.wrap-element-right {
+	width: 770px;
+}
+.sanpham-right-content{
+	width: 1000px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.sanpham-right-content-item{
+    width: 240px;
+	padding: 20px;
+	margin-top: 25px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 6px #bbb;
+}
+.sanpham-right-content-item h1,
+.sanpham-right-content-item p {
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-align: center;
+}
+.sanpham-right-content-item img {
+	width: 200px;
+	height: 280px;
+	object-fit: contain;
+}
+.sanpham-right-bottom{
+    justify-content: space-between;
+    margin: 40px 0 20px;
+    width: 100%;
+}
+.sanpham-left-li ul{
+    display: none;
+}
+
+/*-------Chỉnh sửa hiệu ứng cho cái cột bên trái trang sp--------*/
+.sanpham-left-li.block ul{
+    display: none;
+}
+/*------ Giỏ hàng------*/
+.muahang{
+    display: flex;
+    padding: 100px 0;
+}
+.muahang-content-left{
+    width: 50%;
+}
+.muahang-content-right{
+    width: 50%;
+}
+.muahang-content-left-img{
+    width: 70%;
+    margin-right: 30%;
+}
+.muahang-content-left-img{
+    width: 100%;
+}
+.container {
+	width: 100%;
+}
+.muahang-content {
+	display: flex;
+	justify-content: space-between;
+	width: 50%;
+	margin: auto;
+}
+.muahang-content-left-img img {
+	width: 80%;
+	justify-content: center;
+}
+.row-item-detail {
+	margin-bottom: 35px;
+	font-size: 1.5rem;
+}
+.row-item-detail input {
+	width: 20px;
+	height: 20px;
+}
+.row-item-detail label {
+	margin-right: 15px;
+}
+.row-item-detail button {
+	padding: 10px 20px;
+	border-radius: 5px;
+	border: 1px solid #bbb;
+	font-size: 1.2rem;
+	box-shadow: 4px 4px 5px #bbb;
+	cursor: pointer;
+	background-color: #000;
+	color: #fff;
+	letter-spacing: 2px;
+}
+.row-item-detail button:hover {
+	box-shadow: 0px 0px 5px #bbb;
+	transition: linear 0.2s;
+}
+#quantity {
+	width: 70px;
+	height: 30px;
+	border-radius: 5px;
+	padding-left: 10px;
+	font-size: 1.2rem;
+}
+/*--------------------gioi thieu, tin tuc--------------------*/
+.title {
+    font-size: 30px;/**/
+    font-family:'Courier New', Courier, monospace;
+    color: rgb(156, 194, 200);
+}
+.des {
+    font-size: 20px;
+}
+.phan1 {
+    margin-left: 20px;
+}
+.phan2 {
+    text-align: center;
+}
+.thoigianhoatdong>h2 {
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(156, 194, 200);
+}
+.thoigian2 {
+    text-align: center;
+}
+.wrapper{
+    max-width:1200px;
+    padding: 0 15px;
+    margin:0 auto; 
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+.socialFoot{
+    margin-right: 20px;
+}
+.socialFoot ul{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+}
+.socialFoot ul li{
+    margin-right: 5px;
+}
+.socialFoot ul li a{
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: #ffffff;
+    color:#53382c;
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+    backface-visibility: hidden;
+}
+.hotline {
+    text-align: center;
+}
+.thoigian2 i {
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace;
+    color: rgb(6, 27, 30);
+}
+
+/*---------------------------đăng nhập---------------------------*/
+.form{
+    margin:0;
+    padding: 0;
+}
+.dang-nhap img{
+    width: 50%;
+    height: auto;
+}
+.dang-nhap .form{
+    width: 50%;
+}
+.dang-nhap .form .input-form{
+    margin-bottom: 20px;
+}
+
+.dang-nhap .form .input-form input{
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    border: 1px solid #ca110bea;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #e40606;
+    background: transparent;
+    border-radius: 10px;
+    }
+.dang-nhap {
+	position: relative;
+	width: 100%;
+	overflow: 0;
+}
+.dang-nhap::after {
+	content: '';
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background-color: #000;
+	opacity: 0.2;
+	width: 100%;
+	height: calc(100vh - 70px);
+}
+.dang-nhap img {
+	width: 100%;
+	height: calc(100vh - 75px);
+	object-fit: cover;
+}
+.form {
+	position: absolute;
+	top: 20vh;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+	color: #eb2906;
+	text-shadow: 5px 5px 5px #000;
+	font-weight: bold;
+}
+.form #submit {
+	background-color: #eb2906;
+	color: #fff;
+	font-size: 1.1rem;
+	font-weight: 500;
+	cursor: pointer;
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="checkbox" id="nav-toggle"   >
+    <div class="side">
+        <div class="side-brand">
+            <h2><span class="lab la-accusoft"></span>  <span>Admin</span></h2>
+        </div>
+        <div class="side-menu"> 
+            <ul>
+                <li>
+                    <a href="admin.html" ><span class="las la-igloo"></span>
+                        <span> Bảng thống kê</span></a>
+                </li>
+                <li>
+                    <a href="admin2.html" class="active"><span class="las la-users"></span>
+                        <span> Quản lí</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="las la-clipboard-list"></span>
+                        <span> Điều khiển</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            
+            <a href="trangchu.html">
+                <h2>
+                    <label for="nav-toggle">
+                        <span class="las la-bars"></span>
+                    </label>
+                    Trang chủ
+                </h2>
+            </a>
+                <div class="timkiem-wrapper">
+                    <span class="las la-search"></span>
+                    <input type="search" placeholder="Tìm kiếm"/>
+                </div>
+
+                <div class="user-wrapper">
+                    <div>
+                        <h4>Admin</h4>
+                        <small>Admin chính</small>
+                    </div>
+                </div>
+            
+        </header>
+        <main>
+            <strong> Hiện không thể truy cập</strong>
+        </main>
+        
+    </div>
+</body>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        list-style-type: none;
+        text-decoration: none;
+    }
+    .side{
+    width: 350px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background:#696969 ;
+    transition: width 300ms;
+    }
+    
+    .side-brand{
+        height: 90px;
+        padding-left: 3rem;
+        padding: 1rem 0rem 1rem 2rem;
+        color: rgb(231, 6, 6);
+    }
+    
+    .side-brand span{
+        display: inline-block;
+        padding-right: 1rem;
+    }
+    /* menu */
+    .side-menu{
+        margin-top: 1rem;
+    }
+    .side-menu li{
+        width: 100%;
+        margin-bottom: 2rem;
+        padding-left:1rem;
+    }
+    /* chinhr ther a */
+    .side-menu a{
+        display: block;
+        color: #fff;
+        font-size: 1.2rem;
+        padding-left: 1rem;
+    }
+    
+    .side-menu a.active{
+        background: rgb(243, 8, 8);
+        padding-top: 1rem ;
+        padding-bottom: 1rem;
+        color: #f5f1f3 ;
+        border-radius: 30px 0px 0px 30px ;
+    }
+    
+    
+    .side-menu a span:first-child
+    {
+        padding-right:1rem;
+    }
+    /* noi dung */
+    .main-content{
+        transition: margin-left 300ms;
+        margin-left: 350px;
+    }
+    
+    header{
+        background: #fff;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 1.5rem;
+        box-shadow: 4px 4px 10px rgb(0, 0, 0, 0.3);
+        position: fixed;
+        left: 345px;
+        width: calc(100% - 345px);
+        top: 0;
+        z-index: 100;
+        transition: left 300ms;
+    }
+    header h2{
+        color: rgb(243, 71, 71);
+    }
+    header label span {
+        padding-left: 1.2rem;
+    }
+    main{
+        margin: 350px;
+        min-height: calc(100vh - 90px);
+    }
+    strong{
+        font-size: 4em;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(4 ,1fr);
+        grid-gap: 2rem;
+        margin-top: 2rem;
+    }
+    .card-1{
+        display: flex;
+        justify-content: space-between;
+        background: #fff;
+        padding: 2rem;
+        border-radius: 2px;
+    }
+     .las{
+        font-size: 2rem;
+        margin-top: 20px;
+    }
+    
+    .card-1 div:last-child span{
+        font-size: 3rem;
+        color:#676666;
+    }
+    .card-1  div:first-child span{
+        color: #bdbcbc;
+       }
+    </style>
+</html>
